@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<form id="registrationForm">
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <span class="error" id="usernameError"></span>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <span class="error" id="passwordError"></span>
+  </div>
+  <div>
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required>
+    <span class="error" id="confirmPasswordError"></span>
+  </div>
+  <button type="button" id="registerButton" disabled>Register</button>
+</form>
+<div id="registrationMessage"></div>
+<script src="jq.js"></script>
+</body>
+</html>
